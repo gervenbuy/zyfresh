@@ -2,3 +2,45 @@
 @media(max-width:900px){.site-header{height:72px;padding:0 18px}.site-header nav{display:none}.header-cta{padding:10px 14px}.brand small{display:none}.hero{grid-template-columns:1fr}.hero-copy{min-height:620px;padding:66px 26px 0}.hero-image{min-height:460px}.hero h1{font-size:45px}.hero-actions{align-items:flex-start;flex-direction:column;gap:24px}.trust-row{margin-top:58px}.section{padding:78px 24px}.intro,.faq{grid-template-columns:1fr;gap:22px}.intro-copy{padding-top:0}.section-heading{align-items:start;flex-direction:column;gap:18px}.service-grid{grid-template-columns:1fr}.service-card{min-height:auto}.feature{grid-template-columns:1fr}.feature-image{min-height:400px}.feature-copy{padding:70px 28px}.customer-list{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.steps li{border-bottom:1px solid rgba(201,155,59,.25)}footer{grid-template-columns:1fr;text-align:center;justify-items:center;padding-bottom:110px}.mobile-actions{position:fixed;z-index:50;bottom:0;left:0;right:0;display:grid;grid-template-columns:1fr 1fr;box-shadow:0 -5px 25px rgba(0,0,0,.14)}.mobile-actions a{padding:16px;text-align:center;background:var(--gold);color:var(--deep);font-weight:900}.mobile-actions a:last-child{background:var(--forest);color:white}}
 @media(max-width:520px){.brand strong{font-size:17px}.brand-mark{width:39px;height:39px}.header-cta{font-size:12px}.hero h1{font-size:38px}.hero-lead{font-size:15px}.trust-row{font-size:10px;gap:8px}.hero-image{min-height:340px}.intro h2,.section-heading h2,.customers h2,.faq h2{font-size:34px}.customer-list,.steps{grid-template-columns:1fr}.contact-actions{flex-direction:column}.contact-actions .button{width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* GitHub Pages 主視覺圖片路徑修正 */
+.hero-image {
+  min-height: 680px;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(7, 61, 50, 0.18),
+      transparent 30%
+    ),
+    url("/zyfresh/assets/hero-produce.png");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 美生菜介紹區圖片 */
+.feature-image {
+  min-height: 650px;
+  background-image: url("/zyfresh/assets/hero-produce.png");
+  background-position: 20% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 900px) {
+  .hero-image {
+    min-height: 460px;
+    background-position: center;
+  }
+
+  .feature-image {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-image {
+    min-height: 340px;
+    background-position: 65% center;
+  }
+}
