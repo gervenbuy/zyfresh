@@ -1057,3 +1057,31 @@ footer {
     font-size: 16px;
   }
 }
+/* LINE 按鈕 */
+
+.button-line {
+  background: #06c755;
+  color: white;
+}
+
+.button-line:hover {
+  background: #05b64d;
+}
+
+/* 手機底部改為三個按鈕 */
+
+@media (max-width: 900px) {
+  .mobile-actions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mobile-actions .mobile-line {
+    background: #06c755;
+    color: white;
+  }
+
+  .mobile-actions .mobile-facebook {
+    background: #1877f2;
+    color: white;
+  }
+}
