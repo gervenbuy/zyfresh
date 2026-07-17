@@ -962,3 +962,39 @@ footer {
     transform: scale(1.08);
   }
 }
+/* 主打美生菜區：修正圖片裁切與位置 */
+
+.feature-image {
+  min-height: 650px;
+
+  background-image:
+    url("/zyfresh/assets/hero-produce.png");
+
+  /* 讓圖片依照左側區塊定位 */
+  background-attachment: scroll;
+
+  /* 將照片內容往左移，讓整顆生菜進入畫面 */
+  background-position: 88% center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 平板版 */
+
+@media (max-width: 900px) {
+  .feature-image {
+    min-height: 450px;
+    background-attachment: scroll;
+    background-position: 82% center;
+  }
+}
+
+/* 手機版 */
+
+@media (max-width: 520px) {
+  .feature-image {
+    min-height: 400px;
+    background-position: 85% center;
+  }
+}
