@@ -998,3 +998,62 @@ footer {
     background-position: 85% center;
   }
 }
+/* 喆圓農產行品牌 Logo */
+
+.brand-logo {
+  width: 60px;
+  height: 60px;
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-text strong {
+  font-family:
+    "Noto Serif TC",
+    "Songti TC",
+    serif;
+
+  font-size: 21px;
+  letter-spacing: 0.08em;
+}
+
+.brand-text small {
+  margin-top: 3px;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+}
+
+/* 平板與手機 Logo */
+
+@media (max-width: 900px) {
+  .brand-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .brand-text strong {
+    font-size: 18px;
+  }
+
+  .brand-text small {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .brand-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand-text strong {
+    font-size: 16px;
+  }
+}
