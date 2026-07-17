@@ -475,17 +475,12 @@ a {
   background-image:
     url("/zyfresh/assets/hero-produce.png");
 
-  background-position:
-    20% center;
+  /* 數值越大，照片內容越往左移 */
+  background-position: 78% center;
 
-  background-size:
-    cover;
-
-  background-repeat:
-    no-repeat;
-
-  background-attachment:
-    fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .feature-copy {
